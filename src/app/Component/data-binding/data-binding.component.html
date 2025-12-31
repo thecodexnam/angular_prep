@@ -1,1 +1,32 @@
 <p>data-binding works!</p>
+
+<table>
+    <tr>
+        <td>
+            <h1>{{courseName}}</h1>
+        </td>
+        <td>Name:<input type="text" value={{rollNo}}></td>
+        <td>{{currentDate}}</td>
+        <td>
+            <input type="text" [value]="rollNo">
+        </td>
+
+        <td>
+            <input type="text" [maxLength]="maxTestLength">
+        </td>
+        <td>
+            <span [class]="spanClassNAme">{{currentDate}}</span>
+        </td>
+
+        <td>{{rollNo}}</td>
+
+        <td>
+            <input type="text" [(ngModel)] = "rollNo">
+        </td>
+        <td>
+            <input type="checkbox" [(ngModel)]="isActive">
+        </td>
+        {{isActive}}
+
+    </tr>
+</table>
