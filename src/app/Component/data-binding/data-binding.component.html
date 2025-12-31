@@ -1,5 +1,7 @@
 <p>data-binding works!</p>
 
+<div (scroll)="onWindowChanged()" style="overflow: scroll; height: 100px;">
+
 <table>
     <tr>
         <td>
@@ -30,3 +32,20 @@
 
     </tr>
 </table>
+
+<br>
+<hr>
+
+<button (click)="showAlert()">Show Alert</button>
+
+<select (change)="onCityChanged()">
+    <option value="">Delhi</option>
+    <option value="">Gurugram</option>
+    <option value="">Noida</option>
+    <option value="">Mumbai</option>
+</select>
+
+</div>
+
+
+<h1>{{addTwoNum(100,40)}}</h1>

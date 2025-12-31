@@ -29,4 +29,20 @@ export class DataBindingComponent {
       this.rollNo = 123456789;
     },10000) 
   }
+
+  showAlert(){
+    alert("Show Alert Button Called")
+  }
+
+  onCityChanged(){
+    alert('City Changed')
+  }
+
+  onWindowChanged(){
+    console.log("Window Size Changed ")
+  }
+
+  addTwoNum(num1 : number, num2: number){
+    return num1+num2;
+  }
 }
